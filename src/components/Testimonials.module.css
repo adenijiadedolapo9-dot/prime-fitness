@@ -1,0 +1,155 @@
+.testimonials {
+  width: 100%;
+  padding: 55px 38px;
+  background-color: #1f2a3d;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: var(--heading-font);
+  font-size: var(--section-title);
+}
+
+.clientName {
+  font-family: var(--heading-font);
+  font-size: var(--subheading);
+}
+
+.testimonialText {
+  font-family: var(--body-font);
+  font-size: var(--body-text);
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 0 0 12px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: #f04b35;
+}
+
+.intro {
+  max-width: 340px;
+  margin: 0 0 28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.testimonialList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 18px;
+  background-color: #354155;
+  border: 1px solid #465267;
+  border-radius: 22px;
+  box-sizing: border-box;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile h3 {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.stars {
+  color: #f4d53f;
+  font-size: 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.review {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 1.65;
+  color: #f1f2f5;
+}
+
+.arrowControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 29px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.arrowButton:hover {
+  color: #f04b35;
+}
+
+@media (max-width: 650px) {
+  .testimonials {
+    padding: 45px 20px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .testimonialList {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    scroll-behavior: auto;
+  }
+}

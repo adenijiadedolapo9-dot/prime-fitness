@@ -1,0 +1,191 @@
+.footer {
+  width: 100%;
+  padding: 40px 50px 45px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(248, 230, 226, 0.83), rgba(248, 230, 226, 0.83)),
+    url("../assets/strongman.jpg") center / cover no-repeat;
+
+  color: #101c2d;
+}
+
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: 40px;
+  width: 100%;
+}
+
+
+.brand {
+  max-width: 260px;
+}
+
+.logo {
+  display: block;
+  width: 146px;
+  height: 77.56px;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 12px;
+}
+
+.brand p {
+  max-width: 250px;
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #101c2d;
+}
+
+
+.footerLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  align-items: start;
+  gap: 35px;
+  width: 100%;
+  max-width: 620px;
+  margin-left: auto;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.linkColumn h3 {
+  margin: 0 0 3px;
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 700;
+  color: #101c2d;
+}
+
+.linkColumn a {
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 400;
+  color: #101c2d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkColumn a:hover {
+  color: #e74732;
+}
+
+
+.brandDisplay {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+
+  width: calc(100% - 100px);
+  max-width: 1250px;
+  margin: 65px auto 0;
+
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 0.85;
+}
+
+.primeText,
+.fitnessText {
+  flex: 0 1 auto;
+  min-width: 0;
+  display: inline-block;
+
+  font-family: var(--heading-font);
+  font-size: clamp(55px, 11.5vw, 170px);
+  font-weight: 400;
+  letter-spacing: -2px;
+  line-height: 0.85;
+
+  background-image: url("../assets/strongman.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.primeText {
+  background-image:
+    linear-gradient(rgba(16, 28, 45, 0.88), rgba(16, 28, 45, 0.88)),
+    url("../assets/strongman.jpg");
+}
+
+
+.fitnessText {
+  background-image:
+    linear-gradient(rgba(195, 54, 35, 0.88), rgba(195, 54, 35, 0.88)),
+    url("../assets/strongman.jpg");
+}
+
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 35px 30px;
+  }
+
+  .footerTop {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footerLinks {
+    margin-left: 0;
+    max-width: 650px;
+    gap: 25px;
+  }
+
+  .brandDisplay {
+    width: calc(100% - 50px);
+    margin-top: 50px;
+  }
+
+  .primeText,
+  .fitnessText {
+    font-size: clamp(48px, 11vw, 100px);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+  }
+
+  .brandDisplay {
+    width: calc(100% - 20px);
+    gap: 8px;
+    margin-top: 40px;
+  }
+
+  .primeText,
+  .fitnessText {
+    font-size: clamp(35px, 10vw, 65px);
+    letter-spacing: -1px;
+  }
+
+  .brand p {
+    font-size: 11px;
+  }
+}

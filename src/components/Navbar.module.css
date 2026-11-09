@@ -1,0 +1,148 @@
+.navbar {
+  width: calc(100% - 80px);
+  max-width: 1030px;
+  min-height: 44px;
+  padding: 6px 18px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  position: relative;
+  z-index: 10;
+
+  color: white;
+  background: rgba(65, 65, 65, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navLinks a {
+  font-family: var(--heading-font);
+  font-size: var(--nav-text);
+}
+
+.logo {
+  font-family: var(--heading-font);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoImage {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  position: relative;
+  z-index: 1001;
+}
+
+.navLinks a {
+  padding: 7px 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+  white-space: nowrap;
+  z-index: 1002;
+}
+
+.navLinks .active {
+  padding: 7px 15px;
+  color: #171717;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+.cart {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.consultButton {
+  padding: 12px 20px;
+  color: #171717;
+  background: #fff;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.consultButton:hover {
+  background: #f2f2f2;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    gap: 14px;
+    padding: 6px 14px;
+  }
+
+  .navLinks {
+    gap: 10px;
+  }
+
+  .navActions {
+    gap: 10px;
+  }
+
+  .consultButton{
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    width: calc(100% - 28px);
+    min-height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 24px;
+  }
+
+  .navLinks {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  .navActions {
+    gap: 10px;
+  }
+
+  .consultButton {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,98 @@
+.banner {
+  width: 100%;
+  min-height: 195px;
+  background-color: #f8d8d0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 55px 24px;
+  box-sizing: border-box;
+}
+
+/* PRODUCT PAGE - DEEP BLUE BACKGROUND */
+.productBanner {
+  background: #202939 !important;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.marqueeGroup {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-right: 40px;
+  flex-shrink: 0;
+}
+
+.marqueeGroup span {
+  font-family: var(--heading-font);
+  font-size: 38px;
+  font-weight: 400;
+  color: #a93820;
+  white-space: nowrap;
+}
+
+.marqueeGroup img {
+  width: 160px;
+  height: 85px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.productBanner {
+  background-color: #202939;
+}
+
+.productBanner .marqueeGroup span {
+  color: #ffffff;
+}
+
+.productBanner .marqueeGroup img {
+  filter: brightness(0) invert(1);
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 65px;
+    padding: 15px 12px;
+  }
+
+  .marqueeGroup {
+    gap: 25px;
+    padding-right: 25px;
+  }
+
+  .marqueeGroup span {
+    font-size: 30px;
+  }
+
+  .marqueeGroup img {
+    width: 25px;
+    height: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack {
+    animation: none;
+  }
+}

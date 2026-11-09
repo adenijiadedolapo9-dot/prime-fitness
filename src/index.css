@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;600;700&display=swap);
+
+:root {
+  --heading-font: Bebas\Neue, sans-serif;
+  --body-font: Roboto, sans-serif;
+
+  --hero-title: 64px;
+  --section-title: 48px;
+  --subheading: 28px;
+  --body-text: 16px;
+  --small-text: 14px;
+  --nav-text: 16px;
+  --button-text: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-text);
+  color: #1f2a3d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
+button {
+  font-family: var(--heading-font);
+  font-size: var(--button-text);
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: var(--body-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --hero-title: 44px;
+    --section-title: 36px;
+    --subheading: 24px;
+    --body-text: 15px;
+    --nav-text: 14px;
+    --button-text: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --hero-title: 36px;
+    --section-title: 30px;
+    --subheading: 21px;
+    --body-text: 14px;
+    --small-text: 12px;
+  }
+}
