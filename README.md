@@ -18,3 +18,7 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Project Update
 
 This project is built with React.
+
+## Homepage Development
+
+Working on improvements to the Prime Fitness homepage.
